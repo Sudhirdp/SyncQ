@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <title>Video Player with Subtitles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="big-wrapper light">
+        <img src="./img/shape.png" alt="" class="shape" />
+
+        <header>
+            <div class="container">
+                <a href="/index.html">
+                    <div class="logo">
+                        <img src="./img/caption.svg" alt="Logo" />
+                        <h3>SyncQ</h3>
+                    </div>
+                </a>
+
+                <div class="links">
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="/main.html">Trial</a></li>
+                        <li><a href="#" class="btn">Sign up</a></li>
+                    </ul>
+                </div>
+
+                <div class="overlay"></div>
+
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- <div class="showcase-area"> -->
+        <div class="container" style="padding-top: 3%;">
+            <div class="big-title">
+                <h1>Easy to Work With,</h1>
+                <h1>STEPS below to get best RESULTS.</h1>
+            </div>
+            <p class="text">
+                For premium access and exclusive benefits, upgrade to our Enterprise plan at $100.
+                Unleash the full power of advanced features tailored to optimize your experience.<br>
+                1. Upload Video (recommended .mp4)<br>
+                2. Add Subtitles (only .VTT Supported)<br>
+                3. Real-time Preview <br>
+                4. Play Video and Enjoy it With Subtitles
+            </p>
+        </div>
+        <!-- </div> -->
+
+        <div id="app" class="container2">
+            <div class="main-video">
+                <div class="video">
+                    <video id="videoPlayer" controls></video>
+                </div>
+            </div>
+            <div class="tools">
+                <div>
+                    <input type="file" id="videoInput" class="input_field" accept="video/*"
+                        onchange="handleVideoInput(event)">
+                </div>
+                <div>
+                    <textarea id="subtitleInput" placeholder="Enter subtitle text..."></textarea>
+                </div>
+                <button onclick="createVttFile()" class="btn">Create VTT File</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
