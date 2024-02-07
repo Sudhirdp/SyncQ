@@ -66,11 +66,11 @@ a {
   z-index: 10;
 }
 
-.container1{
+/* .container1{
     position:fixed;
     margin-left: 10%;
     margin-bottom: 30;
-}
+} */
 
 header {
   position: relative;
